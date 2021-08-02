@@ -1,7 +1,7 @@
 // The function here takes the parameters that you
 // have declared in the `glide.json` file, in the
 // same order.
-var levels = [0,0,5,3,2,1];
+var levels = [1,1,5,3,2,1];
 var salary = [
 [0,0,0,0,0,1,1],
 [1,1,1,1,1,7,1],
@@ -6261,11 +6261,13 @@ window.function = function (ayatID, level, end) {
   if(level==1){
     	img_link=img_link+salary[ayatID][2]+"-"+salary[ayatID][3]+"-"+salary[ayatID][3]+".jpg";
   }
+  /*
   else
   {
     	var from=salary[ayatID][4]+Math.round(salary[ayatID][5]/levels[level]*Math.ceil(salary[ayatID][6]*levels[level]/salary[ayatID][5]))-1;
   		var to=salary[ayatID][4]+Math.round(salary[ayatID][5]/levels[level]*Math.ceil(salary[ayatID][6]*levels[level]/salary[ayatID][5]))-1;
     	img_link=img_link+salary[ayatID][2]+"-"+from+"-"+to+".jpg";
   }
+  */
   return img_link;
 }
