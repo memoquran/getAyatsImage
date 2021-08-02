@@ -6258,7 +6258,7 @@ window.function = function (ayatID, level, end) {
   // required input is `undefined`, for example.
   //return str.substring(start, end);
   var img_link="https://beinsync.be/memoquran/Images/verses/v-";
-  if(level==1 || level==0 ){
+  if(level==1 || level==0 || level === undefined || ayatID === undefined ){
     	img_link=img_link+salary[ayatID][2]+"-"+salary[ayatID][3]+"-"+salary[ayatID][3]+".jpg";
   }
   
