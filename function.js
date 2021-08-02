@@ -6258,10 +6258,14 @@ window.function = function (ayatID, level, end) {
   // required input is `undefined`, for example.
   //return str.substring(start, end);
   var img_link="https://beinsync.be/memoquran/Images/verses/v-";
-  if(level=0)
-    img_link=img_link+salary[ayatID][3]+"-"+salary[ayatID][4]+"-"+salary[ayatID][4]+".jpg";
- else
-   img_link=img_link+salary[ayatID][3]+"-"+salary[ayatID][5]+Math.round(salary[ayatID][6]/levels[level]*(Math.ceil(salary[ayatID][7]*levels[level]/salary[ayatID][6];0)-1);0)+"-"+salary[ayatID][5+Math.round(salary[ayatID][6]/levels[level]*Math.ceil(salary[ayatID][7]*levels[level]/salary[ayatID][6];0);0)-1))+".jpg";
- 
+  if(level==1){
+    	img_link=img_link+salary[ayatID][2]+"-"+salary[ayatID][3]+"-"+salary[ayatID][3]+".jpg";
+  }
+  else
+  {
+    	var from=salary[ayatID][4]+Math.round(salary[ayatID][5]/levels[level]*Math.ceil(salary[ayatID][6]*levels[level]/salary[ayatID][5]))-1;
+  		var to=salary[ayatID][4]+Math.round(salary[ayatID][5]/levels[level]*Math.ceil(salary[ayatID][6]*levels[level]/salary[ayatID][5]))-1;
+    	img_link=img_link+salary[ayatID][2]+"-"+from+"-"+to+".jpg";
+  }
   return img_link;
 }
