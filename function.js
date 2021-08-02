@@ -6263,12 +6263,11 @@ window.function = function (ayatID, level) {
   }
   else
   {
-    img_link=55+"-"+level+"-"+ayatID;
-    /*
+      //img_link=55+"-"+level+"-"+ayatID;
       var from=salary[ayatID][4]+Math.round(salary[ayatID][5]/levels[level]*Math.ceil(salary[ayatID][6]*levels[level]/salary[ayatID][5]-1));
   		var to=salary[ayatID][4]+Math.round(salary[ayatID][5]/levels[level]*Math.ceil(salary[ayatID][6]*levels[level]/salary[ayatID][5]))-1;
     	img_link=img_link+salary[ayatID][2]+"-"+from+"-"+to+".jpg";
-      */
+      
   }
   
   return img_link;
