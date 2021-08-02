@@ -1,6 +1,7 @@
 // The function here takes the parameters that you
 // have declared in the `glide.json` file, in the
 // same order.
+var fruits = ['Apple', 'Banana'];
 window.function = function (str, start, end) {
   // For each parameter, its `.value` contains
   // either its value in the type you've declared,
@@ -16,5 +17,6 @@ window.function = function (str, start, end) {
   // `glide.json`, or `undefined` if there's an
   // error or no result can be produced, because a
   // required input is `undefined`, for example.
-  return str.substring(start, end);
+  //return str.substring(start, end);
+  return fruits[1];
 }
