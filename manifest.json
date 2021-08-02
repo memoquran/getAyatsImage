@@ -7,12 +7,12 @@
     "params": [
       {
         "name": "ayatID",
-        "displayName": "AyatID",
+        "displayName": "ayatID",
         "type": "number"
       },
       {
-        "name": "Level",
-        "displayName": "Level",
+        "name": "level",
+        "displayName": "level",
         "type": "number"
       }
     ],
