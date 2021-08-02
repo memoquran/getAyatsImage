@@ -6247,8 +6247,8 @@ window.function = function (ayatID, level) {
   // or it's `undefined`.  This is a good place to
   // extract the `.value`s and assign default
   // values.
-  ayatID = ayatID.value ?? "";
-  level = level.value ?? 0;
+  ayatID = ayatID.value ?? 1;
+  level = level.value ?? 1;
   //end = end.value;
 
   // Your function should return the exact type
@@ -6258,8 +6258,6 @@ window.function = function (ayatID, level) {
   // required input is `undefined`, for example.
   //return str.substring(start, end);
   var img_link="https://beinsync.be/memoquran/Images/verses/v-";
-  //if(level === undefined) {level=1};
-  //if(ayatID === undefined) {ayatID=1};
   if(level==1 || level==0){
     	img_link=img_link+salary[ayatID][2]+"-"+salary[ayatID][3]+"-"+salary[ayatID][3]+".jpg";
   }
