@@ -6241,7 +6241,7 @@ var salary = [
 [6235,604,114,5,1,15,5],
 [6236,604,114,6,1,15,6],
 ];
-window.function = function (ayatID, level, end) {
+window.function = function (ayatID, level) {
   // For each parameter, its `.value` contains
   // either its value in the type you've declared,
   // or it's `undefined`.  This is a good place to
