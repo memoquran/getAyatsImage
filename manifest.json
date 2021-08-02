@@ -16,9 +16,9 @@
         "type": "number"
       },
       {
-        "name": "reader",
-        "displayName": "Reader",
-        "type": "number"
+        "name": "reading",
+        "displayName": "Reading",
+        "type": "string"
       }
     ],
     "result": {
