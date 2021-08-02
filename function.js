@@ -6247,8 +6247,8 @@ window.function = function (ayatID, level) {
   // or it's `undefined`.  This is a good place to
   // extract the `.value`s and assign default
   // values.
-  //str = str.value ?? "";
-  //start = start.value ?? 0;
+  ayatID = ayatID.value ?? "";
+  level = level.value ?? 0;
   //end = end.value;
 
   // Your function should return the exact type
