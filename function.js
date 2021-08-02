@@ -1,9 +1,9 @@
 // The function here takes the parameters that you
 // have declared in the `glide.json` file, in the
 // same order.
-var fruits = ['Apple', 'Banana'];
+var levels = [0,0,5,3,2,1];
 var salary = [
-  [0,0,0,0,0,1,1],
+[0,0,0,0,0,1,1],
 [1,1,1,1,1,7,1],
 [2,1,1,2,1,7,2],
 [3,1,1,3,1,7,3],
@@ -6257,5 +6257,11 @@ window.function = function (ayatID, level, end) {
   // error or no result can be produced, because a
   // required input is `undefined`, for example.
   //return str.substring(start, end);
-  return salary[ayatID][level];
+  var img_link="https://beinsync.be/memoquran/Images/verses/v-";
+  if(level=0)
+    img_link=img_link+salary[ayatID][3]+"-"+salary[ayatID][4]+"-"+salary[ayatID][4]+".jpg";
+ else
+   img_link=img_link+salary[ayatID][3]+"-"+salary[ayatID][5]+Math.round(salary[ayatID][6]/levels[level]*(Math.ceil(salary[ayatID][7]*levels[level]/salary[ayatID][6];0)-1);0)+"-"+salary[ayatID][5+Math.round(salary[ayatID][6]/levels[level]*Math.ceil(salary[ayatID][7]*levels[level]/salary[ayatID][6];0);0)-1))+".jpg";
+ 
+  return img_link;
 }
