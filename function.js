@@ -6256,7 +6256,6 @@ window.function = function (ayatID, level, reading) {
   // required input is `undefined`, for example.
   //return str.substring(start, end);
   var img_link="https://beinsync.be/memoquran/"+reading+"/Images/verses/";
-  if(
   if(level==1 || level==0){
     	img_link=img_link+salary[ayatID][2]+"_"+salary[ayatID][3]+"_"+salary[ayatID][3]+".jpg";
   }
