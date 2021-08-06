@@ -6257,29 +6257,41 @@ window.function = function (ayatID, level, reading) {
   // required input is `undefined`, for example.
   //return str.substring(start, end);
   var img_link="https://beinsync.be/memoquran/"+reading+"/Images/verses/";
-  if(level==1 || level==0){
-    	img_link=img_link+salary[ayatID][2]+"_"+salary[ayatID][3]+"_"+salary[ayatID][3]+".jpg";
+  if(reading == "Hafs"){
+    if(level==1 || level==0){
+        img_link=img_link+salary[ayatID][2]+"_"+salary[ayatID][3]+"_"+salary[ayatID][3]+".jpg";
+    }
+    if(level==2){
+        var from=salary[salary[ayatID][10]][3];
+        var to=salary[salary[ayatID][11]][3];
+        img_link=img_link+salary[ayatID][2]+"_"+from+"_"+to+".jpg";
+    }
+    if(level==3){
+        var from=salary[salary[ayatID][12]][3];
+        var to=salary[salary[ayatID][13]][3];
+        img_link=img_link+salary[ayatID][2]+"_"+from+"_"+to+".jpg";
+    }
+    if(level==4){
+        var from=salary[salary[ayatID][14]][3];
+        var to=salary[salary[ayatID][15]][3];
+        img_link=img_link+salary[ayatID][2]+"_"+from+"_"+to+".jpg";
+    }
+    if(level==5){
+        var from=salary[salary[ayatID][16]][3];
+        var to=salary[salary[ayatID][17]][3];
+        img_link=img_link+salary[ayatID][2]+"_"+from+"_"+to+".jpg";
+    }
   }
-  if(level==2){
-      var from=salary[salary[ayatID][10]][3];
-  		var to=salary[salary[ayatID][11]][3];
-    	img_link=img_link+salary[ayatID][2]+"_"+from+"_"+to+".jpg";
+  else{
+    var page= salary[ayatID][1];
+    if(page<10)
+      img_link=img_link+"00"+salary[ayatID][1]+".jpg";
+    else{
+      if(page<100)
+        img_link=img_link+"0"+salary[ayatID][1]+".jpg";
+      else
+        img_link=img_link+salary[ayatID][1]+".jpg";       
+    }
   }
-  if(level==3){
-      var from=salary[salary[ayatID][12]][3];
-  		var to=salary[salary[ayatID][13]][3];
-    	img_link=img_link+salary[ayatID][2]+"_"+from+"_"+to+".jpg";
-  }
-  if(level==4){
-      var from=salary[salary[ayatID][14]][3];
-  		var to=salary[salary[ayatID][15]][3];
-    	img_link=img_link+salary[ayatID][2]+"_"+from+"_"+to+".jpg";
-  }
-  if(level==5){
-      var from=salary[salary[ayatID][16]][3];
-  		var to=salary[salary[ayatID][17]][3];
-    	img_link=img_link+salary[ayatID][2]+"_"+from+"_"+to+".jpg";
-  }
-
   return img_link;
 }
